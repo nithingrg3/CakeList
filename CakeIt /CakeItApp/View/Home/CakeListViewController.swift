@@ -25,11 +25,6 @@ class CakeListViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-//        self.navigationController?.hideTransparentNavigationBar()
-    }
-    
-    override func didReceiveMemoryWarning() {
-        print("didReceiveMemoryWarning")
     }
     
     // updating URLCache default cache size for image caching or else can use NSCache/Local store/3rd part like SDWebimage

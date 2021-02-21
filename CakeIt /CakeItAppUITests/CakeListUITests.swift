@@ -1,14 +1,13 @@
 //
-//  CakeItAppTests.swift
-//  CakeItAppTests
+//  CakeListUITests.swift
+//  CakeItAppUITests
 //
-//  Created by David McCallum on 19/01/2021.
+//  Created by Nitin George on 21/02/2021.
 //
 
 import XCTest
-@testable import CakeItApp
 
-class CakeItAppTests: XCTestCase {
+class CakeListUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

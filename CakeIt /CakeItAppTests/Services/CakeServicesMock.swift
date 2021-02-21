@@ -19,12 +19,10 @@ final class CakeServicesMock: APICakeProtocol {
         do {
             apiResult = try Data.init(contentsOf: Bundle.main.url(forResource: "MockCake", withExtension: "json")!)
             if let apiResult = apiResult {
-                print(apiResult)
                 let cakes = try JSONDecoder().decode([Cake].self, from: apiResult)
                 completion(true, cakes)
             }
-        } catch let error as NSError {
-            print(error)
+        } catch _ as NSError {
             completion(false, nil)
         }
     }

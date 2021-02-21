@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  CakeItApp
+
+  Created by Nitin George on 20/02/2021.
+  
+*/
+
+"CakeItHomeNavTitle"      = "CakeItApp";
+"NoCakeListErrorMessage"  = "Sorry, we haven’t found any cake";

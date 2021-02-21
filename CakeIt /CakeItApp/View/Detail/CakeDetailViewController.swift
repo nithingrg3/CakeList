@@ -31,7 +31,6 @@ class CakeDetailViewController: UIViewController {
         backButton.title = ""
         self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
         title = viewModel.fetchNavigationTitle() ?? ""
-//        self.navigationController?.presentTransparentNavigationBar()
     }
 
     private func prepareTableView() {

@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		281D085525E286170079CD88 /* CakeListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281D085425E286170079CD88 /* CakeListUITests.swift */; };
 		2867EA3625DC8A4E00F73E5C /* MockCake.json in Resources */ = {isa = PBXBuildFile; fileRef = 2867EA3525DC8A4E00F73E5C /* MockCake.json */; };
-		2867EA5525DC8B8300F73E5C /* ConfigProd.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2867EA4B25DC8B6B00F73E5C /* ConfigProd.xcconfig */; };
-		2867EA5A25DC8B8F00F73E5C /* ConfigStaging.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2867EA5925DC8B8D00F73E5C /* ConfigStaging.xcconfig */; };
-		2867EA5F25DC8BA000F73E5C /* ConfigDev.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2867EA5E25DC8BA000F73E5C /* ConfigDev.xcconfig */; };
 		2867EA7825DC8DE300F73E5C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2867EA7725DC8DE200F73E5C /* Localizable.strings */; };
 		2867EA7F25DC8FE800F73E5C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2867EA7E25DC8FE800F73E5C /* Constants.swift */; };
 		2867EA8025DC8FE800F73E5C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2867EA7E25DC8FE800F73E5C /* Constants.swift */; };
@@ -81,8 +79,6 @@
 		CEF638A225B73FA7009F967A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF638A025B73FA7009F967A /* Main.storyboard */; };
 		CEF638A425B73FA8009F967A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEF638A325B73FA8009F967A /* Assets.xcassets */; };
 		CEF638A725B73FA8009F967A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF638A525B73FA8009F967A /* LaunchScreen.storyboard */; };
-		CEF638B225B73FA8009F967A /* CakeItAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF638B125B73FA8009F967A /* CakeItAppTests.swift */; };
-		CEF638BD25B73FA8009F967A /* CakeItAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF638BC25B73FA8009F967A /* CakeItAppUITests.swift */; };
 		CEF638D225B88C65009F967A /* CakeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF638D125B88C65009F967A /* CakeListViewController.swift */; };
 		CEF638D725B998C8009F967A /* CakeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF638D625B998C8009F967A /* CakeDetailViewController.swift */; };
 		CEF638DC25B99C2C009F967A /* Cake.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF638DB25B99C2C009F967A /* Cake.swift */; };
@@ -106,6 +102,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		281D085425E286170079CD88 /* CakeListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeListUITests.swift; sourceTree = "<group>"; };
 		2867EA3525DC8A4E00F73E5C /* MockCake.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockCake.json; sourceTree = "<group>"; };
 		2867EA3B25DC8B3F00F73E5C /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
 		2867EA4B25DC8B6B00F73E5C /* ConfigProd.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ConfigProd.xcconfig; sourceTree = "<group>"; };
@@ -138,10 +135,8 @@
 		CEF638A625B73FA8009F967A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEF638A825B73FA8009F967A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEF638AD25B73FA8009F967A /* Weather.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Weather.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEF638B125B73FA8009F967A /* CakeItAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeItAppTests.swift; sourceTree = "<group>"; };
 		CEF638B325B73FA8009F967A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEF638B825B73FA8009F967A /* CakeItAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CakeItAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEF638BC25B73FA8009F967A /* CakeItAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeItAppUITests.swift; sourceTree = "<group>"; };
 		CEF638BE25B73FA8009F967A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEF638D125B88C65009F967A /* CakeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeListViewController.swift; sourceTree = "<group>"; };
 		CEF638D625B998C8009F967A /* CakeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeDetailViewController.swift; sourceTree = "<group>"; };
@@ -356,7 +351,6 @@
 			children = (
 				28F5C8D525DEBD9100DDADF7 /* Services */,
 				28F5C8D425DEBD8200DDADF7 /* VM */,
-				CEF638B125B73FA8009F967A /* CakeItAppTests.swift */,
 				CEF638B325B73FA8009F967A /* Info.plist */,
 			);
 			path = CakeItAppTests;
@@ -365,7 +359,7 @@
 		CEF638BB25B73FA8009F967A /* CakeItAppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				CEF638BC25B73FA8009F967A /* CakeItAppUITests.swift */,
+				281D085425E286170079CD88 /* CakeListUITests.swift */,
 				CEF638BE25B73FA8009F967A /* Info.plist */,
 			);
 			path = CakeItAppUITests;
@@ -434,7 +428,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1230;
-				LastUpgradeCheck = 1230;
+				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					CEF6389625B73FA7009F967A = {
 						CreatedOnToolsVersion = 12.3;
@@ -477,10 +471,7 @@
 				CEF638A725B73FA8009F967A /* LaunchScreen.storyboard in Resources */,
 				CEF638A425B73FA8009F967A /* Assets.xcassets in Resources */,
 				CEF638A225B73FA7009F967A /* Main.storyboard in Resources */,
-				2867EA5F25DC8BA000F73E5C /* ConfigDev.xcconfig in Resources */,
-				2867EA5525DC8B8300F73E5C /* ConfigProd.xcconfig in Resources */,
 				2867EA7825DC8DE300F73E5C /* Localizable.strings in Resources */,
-				2867EA5A25DC8B8F00F73E5C /* ConfigStaging.xcconfig in Resources */,
 				2867EA3625DC8A4E00F73E5C /* MockCake.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -538,7 +529,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				28F5C94B25DF308B00DDADF7 /* AppDelegate.swift in Sources */,
-				CEF638B225B73FA8009F967A /* CakeItAppTests.swift in Sources */,
 				2879DA2125DD1315009F8EA7 /* Extensions.swift in Sources */,
 				2867EAA125DC91CF00F73E5C /* CakeListTableViewCellVM.swift in Sources */,
 				2879DA0F25DD0B44009F8EA7 /* APICakeProtocol.swift in Sources */,
@@ -569,10 +559,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEF638BD25B73FA8009F967A /* CakeItAppUITests.swift in Sources */,
 				28F5C93D25DF26E400DDADF7 /* Helper.swift in Sources */,
 				2879DA2225DD1315009F8EA7 /* Extensions.swift in Sources */,
 				2867EAA225DC91CF00F73E5C /* CakeListTableViewCellVM.swift in Sources */,
+				281D085525E286170079CD88 /* CakeListUITests.swift in Sources */,
 				2879DA1025DD0B44009F8EA7 /* APICakeProtocol.swift in Sources */,
 				28D5930025E1B28A00FD5498 /* SceneDelegate.swift in Sources */,
 				2867EA9125DC914B00F73E5C /* CakeListViewModel.swift in Sources */,

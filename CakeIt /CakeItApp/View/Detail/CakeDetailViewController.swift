@@ -54,13 +54,11 @@ extension CakeDetailViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView = UIImageView.init(frame: CGRect.init(x: 0, y: 0, width: tableView.frame.width, height: viewModel.headerViewHeight()))
         let cakeImage = UIImageView(frame: headerView.frame)
+        cakeImage.image = UIImage(named: "CakePlaceholder")
         viewModel.fetchCakeImage() { isSuccess, image in
             DispatchQueue.main.async {
                 if let downloadedImage = image {
                     cakeImage.image = downloadedImage
-                }
-                else {
-                    cakeImage.image = UIImage(named: "CakePlaceholder")
                 }
             }
         }

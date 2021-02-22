@@ -15,7 +15,7 @@ class CakeListViewModelTests: XCTestCase {
     override func setUp() {
         super.setUp()
         viewModel = CakeListViewModel(apiManager: apiManager)
-        viewModel.fetchCakes { (isSuccess, cakes) in
+        viewModel.fetchCakes { (isSuccess) in
         }
     }
     

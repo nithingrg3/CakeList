@@ -20,18 +20,18 @@ class CakeListViewModel: CakeListViewModelProtocol {
         return ("🎂 \(NSLocalizedString("CakeItHomeNavTitle", comment: "")) 🍰")
     }
     
-    func fetchCakes(completion: @escaping (Bool, [Cake]?) -> Void) {
+    func fetchCakes(completion: @escaping (Bool) -> Void) {
         apiManager?.fetchCakes(completion: { [weak self](isSucess, cakeList) in
             if isSucess {
                 guard let cake = cakeList else {
-                    completion(true, nil)
+                    completion(true)
                     return
                 }
                 self?.cakeList = cake
-                completion(true, cake)
+                completion(true)
             }
             else {
-                completion(false, nil)
+                completion(false)
             }
         })
     }

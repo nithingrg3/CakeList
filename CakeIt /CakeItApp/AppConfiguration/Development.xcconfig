@@ -1,5 +1,5 @@
 //
-//  ConfigDev.xcconfig
+//  Development..xcconfig
 //  CakeItApp
 //
 //  Created by Nitin George on 20/02/2021.
@@ -10,6 +10,6 @@
 
 
 PRODUCT_NAME              = CakeIt
-TARGET_NAME               = Weather
-WEATHER_BUNDLE_IDENTIFIER = com.cakeIt.dev
+TARGET_NAME               = CakeIt
+PRODUCT_BUNDLE_IDENTIFIER = com.cakeIt.dev
 API_URL                   = https:/gist.githubusercontent.com/hart88/79a65d27f52cbb74db7df1d200c4212b/raw/ebf57198c7490e42581508f4f40da88b16d784ba

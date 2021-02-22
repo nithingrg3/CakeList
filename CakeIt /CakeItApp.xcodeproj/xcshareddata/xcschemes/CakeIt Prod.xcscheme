@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CEF6389625B73FA7009F967A"
-               BuildableName = "CakeItApp.app"
+               BuildableName = "CakeIt.app"
                BlueprintName = "CakeItApp"
                ReferencedContainer = "container:CakeItApp.xcodeproj">
             </BuildableReference>
@@ -23,7 +23,7 @@
       </BuildActionEntries>
    </BuildAction>
    <TestAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Release"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CEF6389625B73FA7009F967A"
-            BuildableName = "CakeItApp.app"
+            BuildableName = "CakeIt.app"
             BlueprintName = "CakeItApp"
             ReferencedContainer = "container:CakeItApp.xcodeproj">
          </BuildableReference>
@@ -62,14 +62,14 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CEF6389625B73FA7009F967A"
-            BuildableName = "CakeItApp.app"
+            BuildableName = "CakeIt.app"
             BlueprintName = "CakeItApp"
             ReferencedContainer = "container:CakeItApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
-      buildConfiguration = "Debug">
+      buildConfiguration = "Release">
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"

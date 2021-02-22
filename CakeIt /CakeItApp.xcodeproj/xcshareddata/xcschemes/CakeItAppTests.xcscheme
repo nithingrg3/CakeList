@@ -17,7 +17,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CEF6389625B73FA7009F967A"
-            BuildableName = "CakeItApp.app"
+            BuildableName = "CakeIt.app"
             BlueprintName = "CakeItApp"
             ReferencedContainer = "container:CakeItApp.xcodeproj">
          </BuildableReference>
@@ -28,7 +28,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CEF638AC25B73FA8009F967A"
-               BuildableName = "Weather.xctest"
+               BuildableName = "CakeIt.xctest"
                BlueprintName = "CakeItAppTests"
                ReferencedContainer = "container:CakeItApp.xcodeproj">
             </BuildableReference>
@@ -50,7 +50,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CEF6389625B73FA7009F967A"
-            BuildableName = "CakeItApp.app"
+            BuildableName = "CakeIt.app"
             BlueprintName = "CakeItApp"
             ReferencedContainer = "container:CakeItApp.xcodeproj">
          </BuildableReference>

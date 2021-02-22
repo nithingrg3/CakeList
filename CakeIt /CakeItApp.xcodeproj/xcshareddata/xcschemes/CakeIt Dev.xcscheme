@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CEF6389625B73FA7009F967A"
-               BuildableName = "CakeItApp.app"
+               BuildableName = "CakeIt.app"
                BlueprintName = "CakeItApp"
                ReferencedContainer = "container:CakeItApp.xcodeproj">
             </BuildableReference>
@@ -45,14 +45,14 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CEF6389625B73FA7009F967A"
-            BuildableName = "CakeItApp.app"
+            BuildableName = "CakeIt.app"
             BlueprintName = "CakeItApp"
             ReferencedContainer = "container:CakeItApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
-      buildConfiguration = "Release"
+      buildConfiguration = "Debug"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CEF6389625B73FA7009F967A"
-            BuildableName = "CakeItApp.app"
+            BuildableName = "CakeIt.app"
             BlueprintName = "CakeItApp"
             ReferencedContainer = "container:CakeItApp.xcodeproj">
          </BuildableReference>
@@ -72,7 +72,7 @@
       buildConfiguration = "Debug">
    </AnalyzeAction>
    <ArchiveAction
-      buildConfiguration = "Release"
+      buildConfiguration = "Debug"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

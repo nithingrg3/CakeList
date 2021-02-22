@@ -9,7 +9,7 @@ import UIKit
 
 protocol  CakeListViewModelProtocol {
     func fetchNavigationTitle() -> String?
-    func fetchCakes(completion: @escaping (_ isSuccess: Bool, _ myCakes: [Cake]?) -> Void)
+    func fetchCakes(completion: @escaping (_ isSuccess: Bool) -> Void)
     func numberOfRows() -> Int
     func fetchSelectedCake(selectedIndex: Int) -> Cake?
 }

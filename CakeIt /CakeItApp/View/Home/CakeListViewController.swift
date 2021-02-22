@@ -48,21 +48,16 @@ class CakeListViewController: UIViewController {
     }
     
     private func fetchCake() {
-        viewModel.fetchCakes { [weak self] isSuccess, cakeList in
+        viewModel.fetchCakes { [weak self] isSuccess in
             DispatchQueue.main.async {
-                isSuccess ? self?.reloadCakeListView() : self?.showErrorMessage()
+                self?.tableView.backgroundView = nil
+                self?.tableView.setNoContentText(to:"")
+                isSuccess ? self?.tableView.reloadData() : self?.showErrorMessage()
             }
         }
     }
     
-    private func reloadCakeListView() {
-        tableView.backgroundView = nil
-        tableView.setNoContentText(to:"")
-        tableView.reloadData()
-    }
-    
     private func showErrorMessage() {
-        tableView.backgroundView = nil
         tableView.setNoContentText(to: NSLocalizedString("NoCakeListErrorMessage", comment: ""))
     }
 }

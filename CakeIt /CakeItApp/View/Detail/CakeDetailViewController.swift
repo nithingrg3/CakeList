@@ -9,7 +9,7 @@ import UIKit
 
 class CakeDetailViewController: UIViewController {
     
-    @IBOutlet var tableView: UITableView!
+    @IBOutlet weak var tableView: UITableView!
     
     var apiManager: APICakeProtocol = CakeServices()
     private var viewModel: CakeDetailViewModelProtocol!

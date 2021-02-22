@@ -9,7 +9,7 @@ import UIKit
 
 class CakeListViewController: UIViewController {
     
-    @IBOutlet var tableView: UITableView!
+    @IBOutlet weak var tableView: UITableView!
     
     var apiManager: APICakeProtocol = CakeServices()
     var viewModel: CakeListViewModelProtocol!

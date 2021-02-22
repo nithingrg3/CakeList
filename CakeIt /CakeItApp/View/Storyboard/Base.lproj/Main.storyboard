@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -10,17 +11,16 @@
         <!--Cake List View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="CakeListViewController" id="BYZ-38-t0r" customClass="CakeListViewController" customModule="CakeItApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CakeListViewController" id="BYZ-38-t0r" customClass="CakeListViewController" customModule="CakeIt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="120" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="feW-cE-PbN">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="120" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="feW-cE-PbN">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CakeListTableViewCell" rowHeight="100" id="TDQ-RI-eVw" customClass="CakeListTableViewCell" customModule="CakeItApp" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CakeListTableViewCell" rowHeight="100" id="TDQ-RI-eVw" customClass="CakeListTableViewCell" customModule="CakeIt" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TDQ-RI-eVw" id="0QU-h0-oX4">
@@ -30,8 +30,8 @@
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CakePlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="z6B-aq-ree">
                                                     <rect key="frame" x="8" y="10" width="80" height="80"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="80" id="fTx-ta-mvB"/>
-                                                        <constraint firstAttribute="width" constant="80" id="itb-wY-3on"/>
+                                                        <constraint firstAttribute="width" constant="80" id="ksM-uM-sQc"/>
+                                                        <constraint firstAttribute="height" constant="80" id="yzg-Ev-aZD"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Banana Cake" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCw-M0-GHA">
@@ -50,24 +50,24 @@
                                                     <rect key="frame" x="8" y="99" width="398" height="1"/>
                                                     <color key="backgroundColor" white="0.80035607993197277" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="1" id="rOc-03-UHH"/>
+                                                        <constraint firstAttribute="height" constant="1" id="eG2-MF-AiZ"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="PcL-d0-zeU" firstAttribute="leading" secondItem="0QU-h0-oX4" secondAttribute="leading" constant="8" id="40C-TK-LSm"/>
-                                                <constraint firstAttribute="trailing" secondItem="HCw-M0-GHA" secondAttribute="trailing" constant="8" id="5jy-lt-hbb"/>
-                                                <constraint firstItem="z6B-aq-ree" firstAttribute="top" secondItem="0QU-h0-oX4" secondAttribute="top" constant="10" id="BB9-kD-k2T"/>
-                                                <constraint firstAttribute="bottom" secondItem="PcL-d0-zeU" secondAttribute="bottom" id="FdB-8O-DZe"/>
-                                                <constraint firstItem="273-6U-rQd" firstAttribute="leading" secondItem="z6B-aq-ree" secondAttribute="trailing" constant="8" id="LW5-7X-Uhy"/>
-                                                <constraint firstItem="PcL-d0-zeU" firstAttribute="top" secondItem="273-6U-rQd" secondAttribute="bottom" constant="38" id="Ndv-s2-acl"/>
-                                                <constraint firstAttribute="trailing" secondItem="273-6U-rQd" secondAttribute="trailing" constant="8" id="Pjt-98-SZL"/>
-                                                <constraint firstItem="z6B-aq-ree" firstAttribute="leading" secondItem="0QU-h0-oX4" secondAttribute="leading" constant="8" id="U6q-ok-ZzP"/>
-                                                <constraint firstItem="273-6U-rQd" firstAttribute="top" secondItem="HCw-M0-GHA" secondAttribute="bottom" constant="8" id="WCb-Fk-3UN"/>
-                                                <constraint firstItem="273-6U-rQd" firstAttribute="top" secondItem="HCw-M0-GHA" secondAttribute="bottom" constant="8" id="YaP-P1-Q6j"/>
-                                                <constraint firstItem="HCw-M0-GHA" firstAttribute="leading" secondItem="z6B-aq-ree" secondAttribute="trailing" constant="8" id="cu7-xJ-rOO"/>
-                                                <constraint firstItem="HCw-M0-GHA" firstAttribute="top" secondItem="0QU-h0-oX4" secondAttribute="top" constant="12" id="d2E-aL-Fsm"/>
-                                                <constraint firstAttribute="trailing" secondItem="PcL-d0-zeU" secondAttribute="trailing" constant="8" id="k18-NU-9gw"/>
+                                                <constraint firstItem="273-6U-rQd" firstAttribute="top" secondItem="HCw-M0-GHA" secondAttribute="bottom" constant="8" id="4db-ag-7MO"/>
+                                                <constraint firstItem="z6B-aq-ree" firstAttribute="leading" secondItem="0QU-h0-oX4" secondAttribute="leading" constant="8" id="72x-ib-Qqb"/>
+                                                <constraint firstAttribute="trailing" secondItem="273-6U-rQd" secondAttribute="trailing" constant="8" id="8CU-IS-0bm"/>
+                                                <constraint firstAttribute="trailing" secondItem="HCw-M0-GHA" secondAttribute="trailing" constant="8" id="AXo-IQ-8gN"/>
+                                                <constraint firstAttribute="bottom" secondItem="PcL-d0-zeU" secondAttribute="bottom" id="HAQ-Ns-280"/>
+                                                <constraint firstItem="273-6U-rQd" firstAttribute="top" secondItem="HCw-M0-GHA" secondAttribute="bottom" constant="8" id="IsW-EE-jJd"/>
+                                                <constraint firstItem="PcL-d0-zeU" firstAttribute="leading" secondItem="0QU-h0-oX4" secondAttribute="leading" constant="8" id="K56-Nd-WBf"/>
+                                                <constraint firstItem="273-6U-rQd" firstAttribute="leading" secondItem="z6B-aq-ree" secondAttribute="trailing" constant="8" id="Sy1-ej-nC8"/>
+                                                <constraint firstAttribute="trailing" secondItem="PcL-d0-zeU" secondAttribute="trailing" constant="8" id="XDW-40-yj5"/>
+                                                <constraint firstItem="z6B-aq-ree" firstAttribute="top" secondItem="0QU-h0-oX4" secondAttribute="top" constant="10" id="bSw-xA-p3a"/>
+                                                <constraint firstItem="HCw-M0-GHA" firstAttribute="top" secondItem="0QU-h0-oX4" secondAttribute="top" constant="12" id="e6W-vH-rjv"/>
+                                                <constraint firstItem="PcL-d0-zeU" firstAttribute="top" secondItem="273-6U-rQd" secondAttribute="bottom" constant="38" id="kUD-QM-vtE"/>
+                                                <constraint firstItem="HCw-M0-GHA" firstAttribute="leading" secondItem="z6B-aq-ree" secondAttribute="trailing" constant="8" id="rNL-kw-OHl"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -82,6 +82,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="feW-cE-PbN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="W7F-2V-Xah"/>
+                            <constraint firstItem="feW-cE-PbN" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="WWy-GD-sDw"/>
+                            <constraint firstItem="feW-cE-PbN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nv7-W3-ZYC"/>
+                            <constraint firstItem="feW-cE-PbN" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="odw-0J-EaJ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="2Sj-QC-2ah"/>
                     <connections>
@@ -95,24 +101,24 @@
         <!--Cake Detail View Controller-->
         <scene sceneID="DeM-dd-MJx">
             <objects>
-                <viewController storyboardIdentifier="CakeDetailViewController" id="DYd-WC-H7w" customClass="CakeDetailViewController" customModule="CakeItApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CakeDetailViewController" id="DYd-WC-H7w" customClass="CakeDetailViewController" customModule="CakeIt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xbg-t7-XNL">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iXA-R3-gs5">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CakeTitleTableViewCell" rowHeight="43.666667938232422" id="xAR-yE-QiL" customClass="CakeTitleTableViewCell" customModule="CakeItApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="600" height="43.666667938232422"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CakeTitleTableViewCell" rowHeight="43.666667938232422" id="xAR-yE-QiL" customClass="CakeTitleTableViewCell" customModule="CakeIt" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xAR-yE-QiL" id="aqn-VU-sLa">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Cu-SB-LMk">
-                                                    <rect key="frame" x="8" y="8" width="584" height="27.5"/>
+                                                    <rect key="frame" x="8" y="8" width="398" height="27.5"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -130,15 +136,15 @@
                                             <outlet property="titleLabel" destination="8Cu-SB-LMk" id="uh0-k0-OU7"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CakeDescriptionTableViewCell" id="8st-yo-WbW" customClass="CakeDescriptionTableViewCell" customModule="CakeItApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="71.666667938232422" width="600" height="28.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CakeDescriptionTableViewCell" id="8st-yo-WbW" customClass="CakeDescriptionTableViewCell" customModule="CakeIt" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="71.666667938232422" width="414" height="28.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8st-yo-WbW" id="Nvx-L6-HAk">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="28.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="28.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hb0-ix-TEd">
-                                                    <rect key="frame" x="8" y="4" width="584" height="20.5"/>
+                                                    <rect key="frame" x="8" y="4" width="398" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -183,7 +189,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="CakePlaceholder" width="128" height="128"/>
+        <image name="CakePlaceholder" width="960" height="540"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

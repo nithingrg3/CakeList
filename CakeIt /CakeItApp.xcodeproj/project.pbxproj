@@ -134,9 +134,9 @@
 		CEF638A325B73FA8009F967A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEF638A625B73FA8009F967A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEF638A825B73FA8009F967A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CEF638AD25B73FA8009F967A /* CakeIt.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CakeIt.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEF638AD25B73FA8009F967A /* CakeItAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CakeItAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF638B325B73FA8009F967A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CEF638B825B73FA8009F967A /* CakeIt.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CakeIt.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEF638B825B73FA8009F967A /* CakeItAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CakeItAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF638BE25B73FA8009F967A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEF638D125B88C65009F967A /* CakeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeListViewController.swift; sourceTree = "<group>"; };
 		CEF638D625B998C8009F967A /* CakeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeDetailViewController.swift; sourceTree = "<group>"; };
@@ -321,8 +321,8 @@
 			isa = PBXGroup;
 			children = (
 				CEF6389725B73FA7009F967A /* CakeIt.app */,
-				CEF638AD25B73FA8009F967A /* CakeIt.xctest */,
-				CEF638B825B73FA8009F967A /* CakeIt.xctest */,
+				CEF638AD25B73FA8009F967A /* CakeItAppTests.xctest */,
+				CEF638B825B73FA8009F967A /* CakeItAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -400,7 +400,7 @@
 			);
 			name = CakeItAppTests;
 			productName = CakeItAppTests;
-			productReference = CEF638AD25B73FA8009F967A /* CakeIt.xctest */;
+			productReference = CEF638AD25B73FA8009F967A /* CakeItAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		CEF638B725B73FA8009F967A /* CakeItAppUITests */ = {
@@ -418,7 +418,7 @@
 			);
 			name = CakeItAppUITests;
 			productName = CakeItAppUITests;
-			productReference = CEF638B825B73FA8009F967A /* CakeIt.xctest */;
+			productReference = CEF638B825B73FA8009F967A /* CakeItAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -702,7 +702,6 @@
 		};
 		2867EA6525DC8C9100F73E5C /* Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2867EA5925DC8B8D00F73E5C /* Staging.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -718,13 +717,12 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CakeItApp.app/CakeItApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CakeIt.app/CakeIt";
 			};
 			name = Staging;
 		};
 		2867EA6625DC8C9100F73E5C /* Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2867EA5925DC8B8D00F73E5C /* Staging.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -901,7 +899,6 @@
 		};
 		CEF638C525B73FA8009F967A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2867EA5E25DC8BA000F73E5C /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -917,13 +914,12 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CakeItApp.app/CakeItApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CakeIt.app/CakeIt";
 			};
 			name = Debug;
 		};
 		CEF638C625B73FA8009F967A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2867EA4B25DC8B6B00F73E5C /* Production.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -939,13 +935,12 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CakeItApp.app/CakeItApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CakeIt.app/CakeIt";
 			};
 			name = Release;
 		};
 		CEF638C825B73FA8009F967A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2867EA5E25DC8BA000F73E5C /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -966,7 +961,6 @@
 		};
 		CEF638C925B73FA8009F967A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2867EA4B25DC8B6B00F73E5C /* Production.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -28,7 +28,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CEF638AC25B73FA8009F967A"
-               BuildableName = "CakeIt.xctest"
+               BuildableName = "CakeItAppTests.xctest"
                BlueprintName = "CakeItAppTests"
                ReferencedContainer = "container:CakeItApp.xcodeproj">
             </BuildableReference>
